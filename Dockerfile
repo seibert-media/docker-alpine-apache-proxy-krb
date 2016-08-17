@@ -2,7 +2,7 @@ FROM seibertmedia/alpine-apache-proxy
 
 MAINTAINER //SEIBERT/MEDIA GmbH <docker@seibert-media.net>
 
-ENV KDC_IP     192.168.122.145
+ENV KDC_IP     172.16.38.10
 ENV KDC_REALM  SMTEST.NET
 ENV WEB_DOMAIN smtest.net
 
