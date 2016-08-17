@@ -1,6 +1,5 @@
 <VirtualHost *:80>
 	ServerName confluence.smtest.net
-	ServerAlias confluence
 
 	ProxyRequests Off
 #	ProxyPreserveHost On
@@ -24,10 +23,6 @@
 		KrbServiceName          HTTP
 		Krb5KeyTab              /etc/apache2/vhost.d/confluence.smtest.net.keytab
 		require                 valid-user
-
-		SetOutputFilter DEFLATE
-		SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
-		Header append Vary User-Agent env=!dont-vary
 
 		RewriteEngine On
 		RewriteCond %{REMOTE_USER} ^(.*)$
