@@ -1,5 +1,7 @@
 # alpine-apache-krb
 
+Alpine based system with apache as reverse proxy with kerberos auth.
+
 ## Getting started
 
 ```
