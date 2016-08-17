@@ -20,7 +20,7 @@
 		KrbMethodNegotiate      On
 		KrbMethodK5Passwd       On
 		KrbAuthRealms           SMTEST.NET
-		KrbServiceName          HTTP
+		KrbServiceName          HTTP/confluence.smtest.net
 		Krb5KeyTab              /etc/apache2/vhost.d/confluence.smtest.net.keytab
 		require                 valid-user
 
